@@ -10,3 +10,17 @@ function acessar (){
         window.location.href = "cadastro.html";
     }
 }
+
+// cria variavel do tipo array
+var dadoslista = [];
+
+function salvarUser(){
+    let nomeUser = document.getElementById('nomeUser').value;
+
+    if(nomeUser){
+        dadoslista.push(nomeUser);
+        console.log(dadoslista);
+        document.getElementById('nomeUser').value = "";
+
+    }
+}
